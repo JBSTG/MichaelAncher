@@ -1,0 +1,260 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+/*
+X
+X
+X
+X
+*/
+
+@font-face{
+    font-family: "Timeless";
+    src: url("../Content/Timeless.ttf");
+}
+
+.title-page{
+    background-image:url(../Content/Images/the_drowned_fisherman.jpg);
+    background-size:cover;
+}
+.introduction-page {
+    background-image: url(../Content/Images/Michael_Ancher_-_Brænding_ved_Skagen_-_1919.png);
+    background-size: cover;
+}
+.bio-page {
+    background-image: url("../Content/Images/Mandskabet_reddet_(Michael_Ancher).jpg");
+    background-size: cover;
+}
+.gallery-page {
+    background-color:black;
+    background-size: cover;
+}
+
+.page-pp{
+    border:1px red solid;
+}
+
+.navbar-inverse {
+    background-color: rgba(0,0,0,0);
+    border:0px;
+}
+.jumbotron {
+    background-color: rgba(0,0,0,0);
+}
+.spacer-small{
+    height:12vh;
+}
+
+
+@media screen and (max-width:480px){
+    .spacer-gallery {
+        height: 2vh;
+        margin: 0px;
+        width: 0px;
+    }
+}
+
+.mainTitle h1,.mainTitle p{
+    font-size: 50px;
+    text-align: center;
+}
+
+.title-page-style, .collapse ul li a.title-page-style,#home-link.title-page-style{
+    color: goldenrod;
+    font-family: Timeless;
+}
+
+
+.introduction-page-style, .collapse ul li a.introduction-page-style, #home-link.introduction-page-style {
+    color: red;
+    mix-blend-mode: multiply;
+    font-family: Timeless;
+}
+
+.bio-page-style, .collapse ul li a.bio-page-style, #home-link.bio-page-style {
+    color: peachpuff;
+    font-family: Timeless;
+}
+.gallery-page-style, .collapse ul li a.gallery-page-style, #home-link.gallery-page-style {
+    color: red;
+    font-family: Timeless;
+    mix-blend-mode: multiply;
+}
+
+
+.introduction-page-style {
+    color: darkred;
+    mix-blend-mode: multiply;
+    font-family: Timeless;
+}
+
+.mainTitle p {
+    font-size: 30px;
+}
+
+.border{
+    border: 1px red solid;
+}
+
+.image-showcase {
+    width: 100%;
+    text-align: center;
+    padding:0px;
+
+}
+.image-showcase p{
+    text-align:center;
+    font-size:1.5em;
+}
+.image-showcase-content{
+    width:100%;
+    padding:10px;
+    background-color:rgba(255,255,255,0.7);
+}
+
+.image-showcase-content img {
+    width: 100%;
+    text-align: center;
+}
+.diamond {
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
+@media screen and (min-width: 768px){
+    .bio-content {
+        border-bottom: 1px peachpuff solid;
+    }
+}
+
+
+.bio-content {
+    text-align: center;
+}
+@media screen and (min-width:768px){
+    .bio-content {
+        max-height: 18vh;
+        overflow: auto;
+    }
+}
+.bio-content-header {
+    text-align: center;
+}
+.bio-content-header h1{
+    text-align: center;
+    font-size:10vh;
+}
+
+.gallery-item {
+    height: 15vh;
+    padding:0px;
+}
+.gallery-item button {
+    height: 100%;
+    width: 100%;
+    border: 0px;
+    background-position: 50% 50%;
+    background-size: 100% auto;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+
+    font-family:Timeless;
+    font-size:10vh;
+    color:red;
+}
+.gallery-item button p {
+    mix-blend-mode: multiply;
+}
+
+
+.gallery-item button:hover {
+    -webkit-filter: initial; /* Safari 6.0 - 9.0 */
+    filter: initial;
+    -webkit-transition: -webkit-filter 500ms linear;
+    -webkit-transition: background-size 500ms linear;
+}
+
+
+#g1 {
+    background-image: url(../Content/Images/Michael_Ancher_-_A_stroll_on_the_beach_-_Google_Art_Project.jpg);
+}
+#g2 {
+    background-image: url("../Content/Images/'Hip,_Hip,_Hurrah!_Artist_Festival_at_Skagen',_by_Peder_Severin_Krøyer_(1888)_Demisted_with_DXO_PhotoLab_Clearview;_cropped_away_black_border_edge.jpg");
+}
+#g3 {
+    background-image: url(../Content/Images/Michael_Ancher_-_Ankeret_repareres_en_sommerdag_på_Skagen_Strand.png);
+}
+#g4 {
+    background-image: url("../Content/Images/Michael_Ancher_-_Figures_in_a_landscape._Blind_Kristian_and_Tine_among_the_dunes_-_Google_Art_Project.jpg");
+}
+#g5 {
+    background-image: url("../Content/Images/Kunstdommere_(Michael_Ancher).jpg");
+}
+#g6 {
+    background-image: url(../Content/Images/Michael_Ancher_-_Portrait_of_my_wife._The_painter_Anna_Ancher_-_Google_Art_Project.jpg);
+}
+
+
+@media screen and (min-width:768px) {
+    .gallery-item button{
+        background-size: auto 100%;
+    }
+    .gallery-item button:hover {
+        background-size:auto 105%;
+        -webkit-transition: background-size 500ms linear;
+    }
+}
+
+@media screen and (min-width:768px){
+    .gallery-item {
+        height: 100%;
+    }
+}
+
+.anchor{
+    position:relative;
+    width:0px;
+    height:0px;
+    margin:0px;
+}
+.gallery-item-highlight-background {
+    position: absolute;
+    top: 100vh;
+}
+.gallery-item-highlight-background-visible {
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    top: 0vh;
+    height: 100vh;
+    width: 100vw;
+    z-index: 999999999;
+    -webkit-transition: top 0.2s ease-in-out;
+    text-align: center;
+}
+.gallery-item-highlight-content img{
+    max-width:100%;
+    max-height:50vh;
+}
+.gallery-title{
+    color:white;
+    width:100%;
+}
