@@ -34,16 +34,20 @@ X
     src: url("../Content/Timeless.ttf");
 }
 
-.title-page{
-    background-image:url(../Content/Images/the_drowned_fisherman.jpg);
-    background-size:cover;
+body{
+    background-color:black;
+    overflow-x:hidden;
+}
+.title-page {
+    background-image: url(../Content/Images/FullQuality/the_drowned_fisherman.jpg),url(../Content/Images/LowQuality/the_drowned_fisherman.jpg);
+    background-size: cover,cover;
 }
 .introduction-page {
-    background-image: url(../Content/Images/Michael_Ancher_-_Brænding_ved_Skagen_-_1919.png);
+    background-image: url(../Content/Images/FullQuality/Michael_Ancher_-_Brænding_ved_Skagen_-_1919.jpg),url(../Content/Images/LowQuality/Michael_Ancher_-_Brænding_ved_Skagen_-_1919.jpg);
     background-size: cover;
 }
 .bio-page {
-    background-image: url("../Content/Images/Mandskabet_reddet_(Michael_Ancher).jpg");
+    background-image: url("../Content/Images/FullQuality/Mandskabet_reddet_(Michael_Ancher).jpg"),url("../Content/Images/LowQuality/Mandskabet_reddet_(Michael_Ancher).jpg");
     background-size: cover;
 }
 .gallery-page {
@@ -88,7 +92,6 @@ X
 
 .introduction-page-style, .collapse ul li a.introduction-page-style, #home-link.introduction-page-style {
     color: red;
-    mix-blend-mode: multiply;
     font-family: Timeless;
 }
 
@@ -99,13 +102,11 @@ X
 .gallery-page-style, .collapse ul li a.gallery-page-style, #home-link.gallery-page-style {
     color: red;
     font-family: Timeless;
-    mix-blend-mode: multiply;
 }
 
 
 .introduction-page-style {
     color: darkred;
-    mix-blend-mode: multiply;
     font-family: Timeless;
 }
 
@@ -176,15 +177,10 @@ X
     background-size: 100% auto;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
-
-    font-family:Timeless;
-    font-size:10vh;
-    color:red;
+    font-family: Timeless;
+    font-size: 10vh;
+    color: rgba(255,0,0,0.6);
 }
-.gallery-item button p {
-    mix-blend-mode: multiply;
-}
-
 
 .gallery-item button:hover {
     -webkit-filter: initial; /* Safari 6.0 - 9.0 */
@@ -195,22 +191,22 @@ X
 
 
 #g1 {
-    background-image: url(../Content/Images/Michael_Ancher_-_A_stroll_on_the_beach_-_Google_Art_Project.jpg);
+    background-image: url(../Content/Images/FullQuality/Michael_Ancher_-_A_stroll_on_the_beach_-_Google_Art_Project.jpg);
 }
 #g2 {
-    background-image: url("../Content/Images/'Hip,_Hip,_Hurrah!_Artist_Festival_at_Skagen',_by_Peder_Severin_Krøyer_(1888)_Demisted_with_DXO_PhotoLab_Clearview;_cropped_away_black_border_edge.jpg");
+    background-image: url("../Content/Images/FullQuality/'Hip,_Hip,_Hurrah!_Artist_Festival_at_Skagen',_by_Peder_Severin_Krøyer_(1888)_Demisted_with_DXO_PhotoLab_Clearview;_cropped_away_black_border_edge.jpg");
 }
 #g3 {
-    background-image: url(../Content/Images/Michael_Ancher_-_Ankeret_repareres_en_sommerdag_på_Skagen_Strand.png);
+    background-image: url(../Content/Images/FullQuality/Michael_Ancher_-_Ankeret_repareres_en_sommerdag_på_Skagen_Strand.jpg);
 }
 #g4 {
-    background-image: url("../Content/Images/Michael_Ancher_-_Figures_in_a_landscape._Blind_Kristian_and_Tine_among_the_dunes_-_Google_Art_Project.jpg");
+    background-image: url("../Content/Images/FullQuality/Michael_Ancher_-_Figures_in_a_landscape._Blind_Kristian_and_Tine_among_the_dunes_-_Google_Art_Project.jpg");
 }
 #g5 {
-    background-image: url("../Content/Images/Kunstdommere_(Michael_Ancher).jpg");
+    background-image: url("../Content/Images/FullQuality/Kunstdommere_(Michael_Ancher).jpg");
 }
 #g6 {
-    background-image: url(../Content/Images/Michael_Ancher_-_Portrait_of_my_wife._The_painter_Anna_Ancher_-_Google_Art_Project.jpg);
+    background-image: url(../Content/Images/FullQuality/Michael_Ancher_-_Portrait_of_my_wife._The_painter_Anna_Ancher_-_Google_Art_Project.jpg);
 }
 
 
@@ -239,6 +235,8 @@ X
 .gallery-item-highlight-background {
     position: absolute;
     top: 100vh;
+    height:0px;
+    overflow:hidden;
 }
 .gallery-item-highlight-background-visible {
     background-color: rgba(0,0,0,0.8);
@@ -258,3 +256,9 @@ X
     color:white;
     width:100%;
 }
+
+.image-loading-zone, .image-loading-zone img{
+    height: 0px;
+    width: 0px;
+}
+

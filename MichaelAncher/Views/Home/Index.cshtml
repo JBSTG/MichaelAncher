@@ -1,6 +1,8 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+<div class="image-loading-zone">
+</div>
 <!--PAGE ONE-->
 <div class="row">
     <div class="panel title-page" data-section-name="title">
@@ -35,7 +37,7 @@
         <div class="col-md-3 col-sm-12 col-md-pull-4">
             <div class="image-showcase">
                 <div class="image-showcase-content">
-                    <image src="../Content/Images/Selvportræt,_1902_-_Michael_Ancher.jpg"></image>
+                    <image src="../Content/Images/FullQuality/Selvportræt,_1902_-_Michael_Ancher.jpg"></image>
                     <h3>A self-portrait of Ancher.</h3>
                 </div>
             </div>
@@ -45,7 +47,7 @@
             <div class="spacer-small hidden-xs"></div>
             <div class="image-showcase">
                 <div class="image-showcase-content">
-                    <image src="../Content/Images/skagen-michael-of-anna.jpg"></image>
+                    <image src="../Content/Images/FullQuality/skagen-michael-of-anna.jpg"></image>
                     <h3>Ancher's Home in Skagen</h3>
                 </div>
             </div>
@@ -119,13 +121,13 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3 gallery-item-highlight-content">
-                        <p id="gallery-title" class="gallery-title">wwww</p>
+                        <p id="gallery-title" class="gallery-title"></p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-2 col-sm-12 border gallery-item">
-        <button id="g1" name="A Stroll on the Beach" >I</button>
+        <div class="col-md-2 col-sm-12 gallery-item">
+        <button id="g1" name="A Stroll on the Beach">I</button>
         </div>
     <div class="spacer-gallery"></div>
     <div class="col-md-2 col-sm-12 gallery-item">
@@ -200,5 +202,6 @@
             var moveTo = $(this).attr('href');
             $.scrollify("move", moveTo);
         });
+
     </script>
 }
