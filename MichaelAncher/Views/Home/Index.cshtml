@@ -2,6 +2,8 @@
     ViewBag.Title = "Home Page";
 }
 <div class="image-loading-zone">
+    <img src="../Content/Images/LowQuality/the_drowned_fisherman.jpg"/>
+    <img src="../Content/Images/LowQuality/Mandskabet_reddet_(Michael_Ancher).jpg"/>
 </div>
 <!--PAGE ONE-->
 <div class="row">
@@ -24,33 +26,26 @@
         <div class="spacer-small"></div>
         <div class="col-md-4  col-sm-12 col-md-push-4">
             <div class="spacer-small hidden-xs"></div>
-            <div class="image-showcase mainTitle">
-                <div class="image-showcase-content diamond">
-                    <h1>Introduction</h1>
-                    <p>
-                        Michael Peter Ancher (9 June 1849 – 19 September 1927) was a Danish realist artist, and widely known for his paintings of fishermen, the lakes, and other scenes from the Danish fishing community in Skagen.
-                    </p>
-                </div>
+            <div class="image-showcase shadow-lg mainTitle">
+                <h1>Introduction</h1>
+                <p>
+                    Michael Peter Ancher (9 June 1849 – 19 September 1927) was a Danish realist artist, and widely known for his paintings of fishermen, the lakes, and other scenes from the Danish fishing community in Skagen.
+                </p>
             </div>
-
         </div>
         <div class="col-md-3 col-sm-12 col-md-pull-4">
-            <div class="image-showcase">
-                <div class="image-showcase-content">
+                <div class="image-showcase">
                     <image src="../Content/Images/FullQuality/Selvportræt,_1902_-_Michael_Ancher.jpg"></image>
                     <h3>A self-portrait of Ancher.</h3>
                 </div>
-            </div>
         </div>
         <div class="col-md-3 col-sm-12 col-md-offset-2">
             <div class="spacer-small hidden-xs"></div>
             <div class="spacer-small hidden-xs"></div>
             <div class="image-showcase">
-                <div class="image-showcase-content">
                     <image src="../Content/Images/FullQuality/skagen-michael-of-anna.jpg"></image>
                     <h3>Ancher's Home in Skagen</h3>
                 </div>
-            </div>
         </div>
 
     </div>
@@ -71,19 +66,19 @@
         <div class="spacer-small hidden-sm"></div>
         <div class="row">
             <div class="col-md-4 col-sm-12 ">
-                <div class="bio-content">
+                <div class="bio-content vcenter">
                     <p>
                         Michael Peter Ancher was born at Rutsker on the island of Bornholm.
                     </p>
                 </div>
             </div>
             <div class="col-md-4 col-sm-12 ">
-                <div class="bio-content">
+                <div class="bio-content vcenter">
                     <p>In 1871, he spent a short period at C.V Nielsen's art school as a preliminary to joining the Royal Danish Academy of Art in Copenhagen later in the year.</p>
                 </div>
             </div>
             <div class="col-md-4 col-sm-12 ">
-                <div class="bio-content">
+                <div class="bio-content vcenter">
                     <p>Michael Ancher was influenced by his traditional training at the Royal Danish Academy of Fine Arts in the 1870s which imposed strict rules for composition. His marriage to Anna Ancher did, however, introduce him to the naturalistic concept of undecorated reproduction of reality and its colours</p>
                 </div>
             </div>
@@ -91,17 +86,17 @@
         <div class="spacer-small hidden-sm hidden-xs"></div>
         <div class="row">
             <div class="col-md-4 col-sm-12 ">
-                <div class="bio-content">
+                <div class="bio-content vcenter">
                     <p>Among other places, the works of Anna and Michael Ancher can be seen at the Skagens Museum, Statens Museum for Kunst, the Frederiksborg Museum, The Hirschsprung Collection, and Ribe Art Museum.</p>
                 </div>
             </div>
             <div class="col-md-4 col-sm-12 ">
-                <div class="bio-content">
+                <div class="bio-content vcenter">
                     <p>Michael Ancher received the Eckersberg Medal in 1889 and in 1894 the Order of the Dannebrog. Originally many of Ancher's paintings hung in the dining room of the Brøndums Hotel. </p>
                 </div>
             </div>
             <div class="col-md-4 col-sm-12 ">
-                <div class="bio-content">
+                <div class="bio-content vcenter">
                     <p>Anna and Michael Ancher were featured on the front of the previous series DKK1000 bill.</p>
                 </div>
             </div>
@@ -199,8 +194,9 @@
 
         //Link Event Listeners
         $(".page-dependent").click(function (e) {
-            var moveTo = $(this).attr('href');
-            $.scrollify("move", moveTo);
+            //var moveTo = $(this).attr('href');
+            //$.scrollify("move", moveTo);
+            $.scrollify.move($(this).attr("href"));
         });
 
     </script>
